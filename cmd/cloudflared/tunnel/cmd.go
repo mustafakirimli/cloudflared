@@ -546,7 +546,7 @@ func hostnameFromURI(uri string) string {
 	switch u.Scheme {
 	case "ssh":
 		return addPortIfMissing(u, 22)
-	case "rdp":
+	case "tcp":
 		return addPortIfMissing(u, 3389)
 	}
 	return ""
